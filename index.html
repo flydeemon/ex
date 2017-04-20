@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>裁剪图片</title>
+</head>
+<body>
+<input type="file" value="上传图片" id="upload">
+<div id="crop"></div>
+</body>
+<script type="text/javascript" src="crop.js"></script>
+<script type="text/javascript">
+	var cfg = {
+		input: 'upload',
+		handle: function(url){
+			console.log('url:', url);
+			alert('保存成功！');
+		}
+	};
+	var crop = new Crop(cfg);
+</script>
+</html>
